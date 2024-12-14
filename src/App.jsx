@@ -1,8 +1,8 @@
-import React from 'react';
-import './App.css';
-import { FaPhone, FaEnvelope, FaBuilding, FaGlobe, FaLocationArrow, FaPhoneAlt } from 'react-icons/fa';
-import { CiLocationOn } from 'react-icons/ci';
-import { IoMdSend } from 'react-icons/io';
+import "./App.css";
+import image from "./assets/img.JPG";
+import { FaEnvelope, FaBuilding, FaGlobe, FaPhoneAlt } from "react-icons/fa";
+import { CiLocationOn } from "react-icons/ci";
+import { IoMdSend } from "react-icons/io";
 
 const BusinessCard = () => {
   return (
@@ -10,81 +10,72 @@ const BusinessCard = () => {
       <div className="business-card">
         <div className="header">
           <img
-            src="https://via.placeholder.com/100"
+            src={image}
             alt="Logo"
+            width={"100px"}
             className="profile-image"
           />
           <div className="name-title">
             <h2 className="name">Eslam Zahran</h2>
-            <p className="title">Fiber Optics Engineering</p>
+            <p className="title">Solution architect engineer</p>
           </div>
           <div className="footer">
-          <button className="button">
-            <FaPhoneAlt className="icon" />
-
-            Call
-          </button>
-          <button className="button">
-            <IoMdSend  className="icon" />
-            Email
-          </button>
-        </div>
+            <a href="tel:+201025835635" className="button">
+              <FaPhoneAlt className="icon" />
+              Call
+            </a>
+            <a href="mailto:Islam.osama@squaddns-eg.com" className="button">
+              <IoMdSend className="icon" />
+              Email
+            </a>
+          </div>
         </div>
         <div className="content">
-          <p className="info">
+          <p   className="info">
             <FaPhoneAlt className="icon" />
             <div>
-            <h4>
-            +20 102 583 5635
-                        </h4>
-            <span>
-              Mobile
-            </span>
+              <a href="tel:+201025835635" style={{color:"black",textDecoration:"none"}}>+20 102 583 5635</a>
+              <span>Mobile</span>
             </div>
           </p>
           <p className="info">
             <FaEnvelope className="icon" />
             <div>
-            <a href="mailto:amgad.habib@rdm.com" className="email">
-            EslamZahran@gmail.com
-            </a>
-            <span>
-              E-mail
-            </span>
+              <a href="mailto:Islam.osama@squaddns-eg.com" className="email">
+                Islam.osama@squaddns-eg.com
+              </a>
+              <span>E-mail</span>
             </div>
           </p>
           <p className="info">
             <FaBuilding className="icon" />
-           <div>
-            <h4>
-            SQAD
-            </h4>
-            <span>Company</span>
-           </div>
+            <div>
+              <h4>SQAD</h4>
+              <span>Company</span>
+            </div>
           </p>
           <p className="info">
-            <CiLocationOn  className="icon" />
+            <CiLocationOn className="icon" />
             <div>
-            <h4>Egypt</h4>
-            <span>
-              Location
-            </span>
+              <h4>Egypt</h4>
+              <span>Location</span>
             </div>
           </p>
           <p className="info">
             <FaGlobe className="icon" />
             <div>
-            <a href="https://rdm.com" target="_blank" rel="noopener noreferrer" className="website">
-              rdm.com
-            </a>
-            <span>
-              Website
-            </span>
+              <a
+                href="https://rdm.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="website"
+              >
+                squad.com
+              </a>
+              <span>Website</span>
             </div>
-
           </p>
         </div>
-        
       </div>
     </div>
   );
