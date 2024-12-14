@@ -31,10 +31,15 @@ const BusinessCard = () => {
           </div>
         </div>
         <div className="content">
-          <p   className="info">
+          <p className="info">
             <FaPhoneAlt className="icon" />
             <div>
-              <a href="tel:+201025835635" style={{color:"black",textDecoration:"none"}}>+20 102 583 5635</a>
+              <a
+                href="tel:+201025835635"
+                style={{ color: "black", textDecoration: "none" }}
+              >
+                +20 102 583 5635
+              </a>
               <span>Mobile</span>
             </div>
           </p>
@@ -50,7 +55,7 @@ const BusinessCard = () => {
           <p className="info">
             <FaBuilding className="icon" />
             <div>
-              <h4>SQAD</h4>
+              <h4>SQUAD DNS</h4>
               <span>Company</span>
             </div>
           </p>
@@ -65,12 +70,12 @@ const BusinessCard = () => {
             <FaGlobe className="icon" />
             <div>
               <a
-                href="https://rdm.com"
+                href="http://squaddns-eg.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="website"
               >
-                squad.com
+                squaddns-eg.com
               </a>
               <span>Website</span>
             </div>
