@@ -55,14 +55,14 @@ const BusinessCard = () => {
           <p className="info">
             <FaBuilding className="icon" />
             <div>
-              <h4>SQUAD DNS</h4>
+              <a>SQUAD DNS</a>
               <span>Company</span>
             </div>
           </p>
           <p className="info">
             <CiLocationOn className="icon" />
             <div>
-              <h4>Egypt</h4>
+              <a>Egypt</a>
               <span>Location</span>
             </div>
           </p>
